@@ -1,0 +1,12 @@
+
+
+<h1>Login</h1><br>
+
+<h4><%=flash[:notice] %></h4>
+
+<%= form_tag(login_path) do %>
+<%= label_tag :name %><br>
+<%= text_field_tag :name %><br><br>
+
+<%= submit_tag 'Login' %><br><br>
+<% end %>
